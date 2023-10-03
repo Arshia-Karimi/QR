@@ -1,0 +1,55 @@
+@font-face{
+    font-family: 'dana';
+    src: url("dana-fanum-regular.ttf") format('truetype')
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'dana';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: orangered;
+}
+.container{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+.container .info h1{
+    font-family: 'dana';
+    padding-bottom: 10px;
+}
+.container form{
+    margin: 15px 0 25px;
+}
+.container form :where(input , button){
+    outline: 0;
+    border: 0;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+}
+.container form input{
+    border: 1px solid black;
+}
+.container form button{
+    background: orangered;
+    color: black;
+}
+.container .qr-code{
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
